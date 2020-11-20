@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Contact us</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <nav class="navigation">
+            <a href ="./index.html">Home</a>
+            <a href ="./Characters.html">Cast</a>
+            <a href ="./Gallery.html">Media</a>
+            <a href ="./Contact.html">Contact Us</a>
+            <a href ="./Bookings.html">Book</a>
+        </nav>
+            <h2>Stay in touch with us</h2>
+            <p>Leave your details below and receive exclusive access to all things Black Panther.</p>
+
+            <form action="submission.html" method="POST">
+                <section class="nameandsurname">
+                    <label for="name">Name(s)</label>
+                    <input type="text" name="name" id="name" required maxlength="30">
+                        <hr>
+                    <label for="surname">Surname</label>
+                    <input type="text" name="surname" id="surname" required maxlength="30">
+
+                </section>
+                <hr>
+                <section class="emailaddress">
+                    <label for="email">Email Address</label>
+                    <input type="text" name="email" id="email" required maxlength="30">
+
+                </section>
+                <hr>
+                <section class="extra-info">
+                    <label for="extra">Thoughts on the new movie?</label>
+                    <br>
+                    <textarea id="extra" name="extra" rows="4" cols="45"></textarea>
+
+                </section>
+                <hr>
+
+                <section class="submission">
+                    <input type="submit" value="Send">
+
+                </section>
+                
+
+            </form>
+    </body>
+</html>

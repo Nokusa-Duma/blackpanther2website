@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Bookings</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+            <nav class="navigation">
+                <a href ="./index.html">Home</a>
+                <a href ="./Characters.html">Cast</a>
+                <a href ="./Gallery.html">Media</a>
+                <a href ="./Contact.html">Contact Us</a>
+                <a href ="./Bookings.html">Book</a>
+            </nav>
+            <form action="submission.html" method="POST">
+                <section class="names">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" required>
+                    <br>
+
+                    <label for="surname">Surname:</label>
+                    <input type="text" name="surname" id="surname" required>
+                    <br>
+
+                </section>
+                <section class="emailaddress">
+                    <label for="emailaddress">Email address:</label>
+                    <input type="email" name="emailaddress" id="emailaddress" required>
+                    <br>
+
+                </section>
+                <section class="phone">
+                    <label for="phone">Cellphone number:</label>
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    <br>
+
+                </section>
+                <section class="seats">
+                    <label for="seats">Number of seats required:</label>
+                    <input type="number" name="seats" id="seats" min="1" max="4" required>
+                    <br>
+                </section>
+                <section class="time">
+                    <p>Select time:</p>
+                    <input type="radio" id="midday" name="time">
+                    <label for="time">12:00</label>
+                    <br>
+
+                    <input type="radio" id="afternoon" name="time">
+                    <label for="time">15:00</label>
+                    <br>
+
+                    <input type="radio" id="evening" name="time">
+                    <label for="time">17:00</label>
+                    <br>
+
+                    <input type="radio" id="night" name="time">
+                    <label for="time">20:00</label>
+                    
+                </section>
+                <input type="submit" value="Send">
+
+            </form>
+    </body>
+</html>
